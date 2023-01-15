@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: #7c6a6a;
+    overflow-x: hidden;
+}
+
+/* === Header Section === */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: o;
+    z-index: 1000;
+    background:rgba(137, 205, 212, 0.1);
+    box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    transition: 0.6s;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 3px;
+}
+span {
+    color: white;
+}
+.desktop-navbar {
+    display: flex;
+}
+.desktop-navbar a {
+    display: inline-block;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 7px 25px;
+    margin: 0 5px;
+    transition: 0.6s;
+}
+.desktop-navbar a:hover {
+    background: #eba306;
+    transform: scale(0.9);
+    border-radius: 5px;
+}
+.mobile-navbar {
+    display: none;
+}
+
+section {
+    padding: 100px 10%;
+}
+.home {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    text-align: center;
+}
+.home-description h1 {
+    font-size: 7vmin;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.home-image img {
+    width: 100%;
+    height: auto;
+    transition: 0.6s;
+}
+.home-image img:hover {
+    transform: translateY(-10px);
+}
+.home-description p {
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 8px 25px;
+    background: #eba306;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+.about-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    align-items: center;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about-description h1 {
+    font-size: 7vmin;
+    letter-spacing: 4px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.about-description p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.services {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    position: relative;
+}
+.service-title h1{
+    font-size: 7vmin;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-left: 5px solid #eb2f06;
+}
+.service-title p {
+    margin-bottom: 30px;
+}
+.service {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+.service h3 {
+    margin-bottom: 5px;
+}
+
+.service-image img {
+    width: 100%;
+}
+.experience {
+    position: absolute;
+    bottom: 12.5%;
+    left: 45%;
+    background: #eba306;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.experience h2 {
+    font-size: 1.7rem;
+}
+.fact-title {
+    width: 50%;
+}
+.fact-title h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.fact-title p {
+    margin-bottom: 50px;
+}
+.fact-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    align-items: center;
+    text-align: center;
+}
+.box {
+    border: 1px solid #0a0909;
+    border-radius: 7px;
+    padding: 40px 0;
+    transition: 0.6s;
+    background-color: rgb(94, 174, 174);
+}
+.box img{
+    font-size: 35px;
+    color: #eba306;
+    margin-bottom: 15px;
+}
+.box h1 {
+    margin-bottom: 10px;
+}
+.box:hover {
+    transform: scale(0.9);
+}
+
+.sponser-title {
+    text-align: center;
+    padding-top: 130px;
+  }
+  .sponser-title h1 {
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 24px;
+  }
+  .sponser-title p {
+    width: 542px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .sponsor-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sponsor-item img{
+    filter: grayscale();
+    object-fit: cover;
+    transition: 0.6s;
+}
+footer{
+    text-align: center;
+    width: 1440px;
+    margin: auto;
+    border: 5px;
+}
+footer p{
+    padding: 40px 410px;
+    font-size: 20px;
+    background: #898887;
+    color: #090909;
+    margin: 130px 0;
+}
+  
